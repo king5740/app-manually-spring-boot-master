@@ -1,0 +1,50 @@
+POST localhost/language/add
+Content-Type: application/json
+#Authorization: Basic a2V0bW9uMzprZXRtb24xMjM=
+#Authorization: Basic a2V0bW9uMjprZXRtb24xMjM=
+#Authorization: Basic a2V0bW9uOmtldG1vbjEyMw==
+
+{
+  "title": "boltaboyjon222",
+  "age": 20
+}
+
+###
+GET http://localhost/language/1
+Cookie: JSESSIONID=DCA73F707CEBDB3CE90E8F95E95EF006
+
+###
+PUT http://localhost/language/12
+Content-Type: application/json
+Accept-Language: uz
+Authorization: Basic a2V0bW9uMjprZXRtb24xMjM=
+
+{
+  "title": "ketmonovtesha45"
+}
+
+###
+DELETE http://localhost/language/12
+#Authorization: Basic a2V0bW9uMjprZXRtb24xMjM=
+Authorization: Basic a2V0bW9uMzprZXRtb24xMjM=
+
+
+
+###
+POST http://localhost/language/super?page=0&size=10
+Content-Type: application/json
+
+
+###
+GET http://localhost/language/list-for-users
+Content-Type: application/json
+#Authorization: Basic a2V0bW9uOmtldG1vbjEyMw==
+Authorization: Basic a2V0bW9uMjprZXRtb24xMjM=
+#Authorization: Basic a2V0bW9uMzprZXRtb24xMjM=
+
+
+###
+GET http://localhost/account/food
+#Authorization: Basic a2V0bW9uMjA6a2V0bW9uMTIz
+#Authorization: Basic a2V0bW9uMjE6a2V0bW9uMTIz
+#Authorization: Basic a2V0bW9uOmtldG1vbjEyMw==
